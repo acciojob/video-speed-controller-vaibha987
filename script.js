@@ -17,7 +17,9 @@ function updateButton() {
 }
 
 function skip() {
+	if (isFinite(this.dataset.skip)) {
   video.currentTime += parseFloat(this.dataset.skip);
+}
 }
 
 function handleRangeUpdate() {
