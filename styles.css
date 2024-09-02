@@ -1,2 +1,61 @@
 
 /* Your CSS Code here. */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #000;
+}
+
+.wrapper {
+  position: relative;
+  width: 70%;
+}
+
+.flex {
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  width: 95%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+button {
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+input[type="range"] {
+  width: 100px;
+}
+
+.progress {
+  position: absolute;
+  top: 10px;
+  width: 95%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.progress__filled {
+  width: 0;
+  height: 100%;
+  background: #ff0;
+}
